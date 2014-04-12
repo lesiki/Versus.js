@@ -37,7 +37,7 @@ Versus = function() {
 		// TODO search for links of interest for the result. Returning google search link
 		var i, currentResult;
 		for(i = 0; i < lastResult.length; i++ ) {
-			lastResult[i].linkUrl = 'google.com/search?q=' + lastResult[i].title;
+			lastResult[i].linkUrl = 'http://google.com/search?q=' + lastResult[i].title;
 			lastResult[i].linkTitle = 'Search for ' + lastResult[i].title + ' on google';
 		}
 		renderResults();
